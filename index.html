@@ -10,6 +10,46 @@
 </head>
 
 <body>
+  <div class="popup__hidden">
+    <div class="popup__container">
+      <header class="popup__header">
+        <h2 class="popup__title">Ваш фидбек</h2>        
+      </header>
+      <form class="popup__content">
+          <label class="select__group">
+            <span class="select__label">Как часто вы заходите на сайт?</span>
+            <select class="select__value">
+              <option value="almost every day" selected>Почти каждый день</option>
+              <option value="every few days">Раз в несколько дней</option>
+              <option value="once every few weeks">Раз в несколько недель</option>
+              <option value="several times a year">Несколько раз в год</option>
+            </select>
+          </label>
+        <div class="radio__group">
+          <span class="radio__hint">Вы подписаны на e-mail рассылку?</span>
+          <label class="radio__label" for="R1">
+            <input name="radio-button" type="radio" class="radio__btn" id="R1" value="yes" checked>
+            <span id="R1">Да</span>
+          </label>
+          <label class="radio__label" for="R2">
+            <input name="radio-button" type="radio" class="radio__btn" id="R2" value="no" checked>
+            <span id="R2">Нет</span>
+          </label>
+        </div>
+        <div class="textarea__form">          
+          <span class="textarea__hint">Расскажите, какой контент вы хотели бы видеть<br>на нашем сайте?</span>
+          <textarea class="textarea__field" placeholder="Может, больше рецептов?" required></textarea>          
+        </div>
+        <div class="button">
+          <button class="button__send">Отправить</button>
+        </div>
+      </form>
+      <label class="popup__close">
+        <span class="visualy-hidden popup-close-hint">Закрыть окно</span>      
+        <button class="button__close" type="button"></button>
+      </label>  
+    </div>
+  </div>
   <div class="page">
     <header class="header">
       <div class="header-container">
@@ -54,7 +94,7 @@
                 <a href="#0" class="subject-link">Interior</a>
               </li>
             </ul>
-            <h2 class="trend-title">
+            <h3 class="trend-title">
               <a href="#0" class="trend-title-link">Сейчас в тренде: сад<br> на подоконнике</a>
             </h2>
           </div>  
@@ -66,7 +106,7 @@
                 <a href="#0" class="subject-link">Food</a>
               </li>            
             </ul>
-            <h2 class="trend-title">
+            <h3 class="trend-title">
               <a href="#0" class="trend-title-link">Сыры на красивых картинках из интернета: какие они на вкус?</a>
             </h2>
           </div>
@@ -81,7 +121,7 @@
                 <a href="#0" class="subject-link">Travel</a>
               </li>
             </ul>
-            <h2 class="trend-title">
+            <h3 class="trend-title">
               <a href="#0" class="trend-title-link">Собираемся в первый поход в горы</a>
             </h2>
           </div>
@@ -96,7 +136,7 @@
                 <a href="#0" class="subject-link">Health</a>
               </li>
             </ul>
-            <h2 class="trend-title">
+            <h3 class="trend-title">
               <a href="#0" class="trend-title-link">Сейчас в тренде: сколько витамина с в лимонах?</a>
             </h2>
           </div>
@@ -280,7 +320,7 @@
             </div>
           </article>
         </section>
-        <div class="searh-widget">
+        <div class="search-widget">
           <form class="search-form">
             <label class="search-group">
               <span class="visualy-hidden search-field-hint">Не можете что-то найти? Воспользуйтесь поиском!</span>
@@ -380,7 +420,7 @@
           </div>  
           <div class="product-body">
             <div class="product-content">
-              <h2 class="product-title">Подушки на диван</h2>
+              <h3 class="product-title">Подушки на диван</h2>
               <div class="product-description">
                 <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="product-text-link">здесь</a></p>
               </div>
@@ -406,7 +446,7 @@
           </div>  
           <div class="product-body">
             <div class="product-content">
-              <h2 class="product-title">Кукла <q>зайчик</q></h2>
+              <h3 class="product-title">Кукла <q>зайчик</q></h2>
               <div class="product-description">
                 <p>Интерьерная рукодельная кукла <q>Зайчик</q>, созданию которой посвящена <a href="#0" class="product-text-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               </div>
@@ -428,7 +468,7 @@
           </div>  
           <div class="product-body">
             <div class="product-content">
-              <h2 class="product-title">Шестиугольная рамка</h2>
+              <h3 class="product-title">Шестиугольная рамка</h2>
               <div class="product-description">
                 <p>Необычная рамка для украшения дома из видео <a href="#0" class="product-text-link"><q>Как сделать рамку из подручных средств за 30 минут</q></a></p>
               </div>
