@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>mq_pdc-diplom</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -57,6 +57,9 @@
           <img src="svg/noemi-logo.svg" class="header-logo" alt="noemi-logo">
         </a>
         <nav class="header-menu">
+          <button class="menu__button">
+            <span class="menu__button-label">открыть меню</span>
+          </button>
           <ul class="header-list">
             <li class="menu-list-item">
               <a class="menu-link" href="#0">Главная</a>
@@ -209,7 +212,7 @@
               <span class="post-author">Неизвестный автор</span>
             </header>
             <div class="post-text">
-              <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?</p>
+              <p class="post-text__paragraph">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?</p>
               <p>Мы составили список лучших летних фестивалей по всему миру.</p>
             </div>
           </div>
@@ -240,7 +243,7 @@
         </article>
         <article class="post-article">
           <img src="images/last-post5.jpg" class="post-pic" alt="cushion">
-          <div class="post-item">
+          <div id="last__trend-post" class="post-item">
             <header class="post-header">
               <ul class="post-subject">
                 <li class="subject-item">
@@ -260,7 +263,7 @@
               <span class="post-author">Неизвестный автор</span>
             </header>
             <div class="post-text">
-              <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек,
+              <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется <br> чистка подушек,
                 проще снять чехлы, чем везти подушку в химчистку.</p>
             </div>
           </div>
@@ -305,7 +308,7 @@
             <div class="latest-post-content">
               <time class="latest-post-date" datetime="2019-06-14">14 июня 2019</time>
               <h4 class="latest-post-text">
-                <a href="#0" class="latest-post-link">Кулинарный подход к науке</a>
+                <a href="#0" class="latest-post-link">Кулинарный подход <br> к науке</a>
               </h4>
             </div>
           </article>
@@ -415,9 +418,11 @@
       <h2 class="products-header">Наши изделия</h2>
       <div class="products-container">
         <article class="product">
-          <div class="product-imgbox">
-            <img class="product-img" src="images/shop-item-desk1.jpg" alt="cushion">
-          </div>  
+          <picture class="product-imgbox">
+              <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+              <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px">
+              <img class="product-img" src="images/shop-item-desk1.jpg" alt="cushion">  
+          </picture>  
           <div class="product-body">
             <div class="product-content">
               <h3 class="product-title">Подушки на диван</h2>
@@ -442,7 +447,11 @@
         </article>
         <article class="product">
           <div class="product-imgbox">
-            <img class="product-img" src="images/shop-item-desk2.jpg" alt="bunny_doll">
+            <picture class="product__img">
+              <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+              <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px">           
+              <img class="product-img" src="images/shop-item-desk2.jpg" alt="bunny_doll">
+            </picture>  
           </div>  
           <div class="product-body">
             <div class="product-content">
@@ -464,7 +473,10 @@
         </article>
         <article class="product">
           <div class="product-imgbox">
-            <img class="product-img" src="images/shop-item-desk3.jpg" alt="hexagonal_frame">
+            <picture class="product__img">
+              <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+              <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px">
+              <img class="product-img" src="images/shop-item-desk3.jpg" alt="hexagonal_frame">
           </div>  
           <div class="product-body">
             <div class="product-content">
